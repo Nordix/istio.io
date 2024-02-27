@@ -48,6 +48,7 @@ spec:
   jwtRules:
   - issuer: "testing@secure.istio.io"
     jwksUri: "https://raw.githubusercontent.com/istio/istio/release-1.21/security/tools/jwt/samples/jwks.json"
+    timeout: 5s
 EOF
 }
 

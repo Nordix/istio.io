@@ -68,6 +68,7 @@ Istio 入口网关支持基于经过身份验证的 JWT 的路由，
       jwtRules:
       - issuer: "testing@secure.istio.io"
         jwksUri: "{{< github_file >}}/security/tools/jwt/samples/jwks.json"
+        timeout: 5s
     EOF
     {{< /text >}}
 

@@ -66,6 +66,7 @@ identity and more secure compared using the unauthenticated HTTP attributes (e.g
       jwtRules:
       - issuer: "testing@secure.istio.io"
         jwksUri: "{{< github_file >}}/security/tools/jwt/samples/jwks.json"
+        timeout: 5s
     EOF
     {{< /text >}}
 
